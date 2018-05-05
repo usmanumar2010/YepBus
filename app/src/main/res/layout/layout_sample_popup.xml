@@ -1,0 +1,32 @@
+<com.daasuu.bl.BubbleLayout android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="12dp"
+    android:padding="8dp"
+    app:bl_arrowDirection="top"
+    app:bl_arrowHeight="17dp"
+    app:bl_arrowPosition="230dp"
+    app:bl_arrowWidth="20dp"
+    app:bl_bubbleColor="#34609d"
+    app:bl_cornersRadius="8dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="170dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:text="@string/whole_para"/>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+</com.daasuu.bl.BubbleLayout>

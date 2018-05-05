@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.daasuu.bl.BubbleLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/activity_horizontal_margin"
+    app:bl_arrowDirection="top"
+    app:bl_arrowHeight="12dp"
+    app:bl_arrowPosition="16dp"
+    app:bl_arrowWidth="8dp"
+    app:bl_bubbleColor="#34609d"
+    app:bl_cornersRadius="2dp">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/accessCamera"
+            android:clickable="true"
+            >
+
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:id="@+id/im1"
+                android:src="@drawable/icon_camera"
+                android:layout_marginTop="20dp"
+                />
+            <!--<ImageView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="50dp"-->
+
+                <!--android:src="@drawable/icon_gallery"-->
+                <!--android:layout_marginTop="20dp"-->
+                <!--android:id="@+id/im1"-->
+                <!--android:clickable="true"-->
+                <!--android:focusableInTouchMode="true"-->
+                <!--/>-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:layout_gravity="center"
+                android:layout_below="@+id/im1"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:text="Camera"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="15dp"
+                android:id="@+id/textView2"
+               />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/accessGallery"
+            android:clickable="true"
+
+           >
+
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:id="@+id/im2"
+                android:src="@drawable/icon_gallery"
+                android:layout_marginTop="20dp"
+                android:layout_alignEnd="@+id/textView3"
+               />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="#ffffff"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:text="Gallery"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="15dp"
+                android:id="@+id/textView3"
+                />
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+</com.daasuu.bl.BubbleLayout>

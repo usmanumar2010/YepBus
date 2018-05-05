@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:hedgehog="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="9dp"
+    android:layout_marginBottom="9dp"
+    android:orientation="horizontal">
+
+    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profile_image"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:src="@drawable/defaultrider"
+        app:civ_border_color="#D3D3D3"
+        app:civ_border_width="2dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:maxLines="1"
+                android:text="Subject"
+                android:textColor="#34609d" />
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_weight="1">
+
+                <com.whinc.widget.ratingbar.RatingBar
+                    android:id="@+id/ratingBar"
+                    android:layout_width="100dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentEnd="true"
+                    app:rb_click_rating="true"
+                    app:rb_count="2"
+                    app:rb_empty="@drawable/star_empty"
+                    app:rb_fill="@drawable/star_filled"
+                    app:rb_max_count="5"
+                    app:rb_space="1dp"
+                    app:rb_touch_rating="false" />
+            </RelativeLayout>
+
+            <!--<com.hedgehog.ratingbar.RatingBar-->
+            <!--android:id="@+id/ratingbar"-->
+            <!--android:layout_weight="1"-->
+            <!--android:gravity="end"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--hedgehog:clickable="true"-->
+            <!--hedgehog:halfstart="true"-->
+            <!--hedgehog:starCount="5"-->
+            <!--hedgehog:starEmpty="@drawable/star_empty"-->
+            <!--hedgehog:starFill="@drawable/star_filled"-->
+            <!--hedgehog:starImageHeight="30dp"-->
+            <!--hedgehog:starImageWidth="20dp"-->
+            <!--hedgehog:starImagePadding="1dp"/>-->
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:textColor="#34609d"
+            android:text="ddddddd dddddddddd  ddddd dddddd dddd dddddddda aaa aaaaa dddd aaaaa aaaaaa aaaaaa aaaaaaaaaaaaaa aaaaa aaaa aaaaaaa"/>
+
+
+        <!--<Button-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/showMoreComments"-->
+            <!--android:background="#34609d"-->
+            <!--android:textColor="#FFFFFF"-->
+            <!--android:text="Show More"-->
+            <!--/>-->
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

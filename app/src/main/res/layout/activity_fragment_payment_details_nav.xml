@@ -1,0 +1,27 @@
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/ll3"
+    android:weightSum="3"
+    android:layout_marginTop="20dp"
+    android:orientation="vertical"
+    android:layout_below="@+id/ll2"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/paymentDetailsListView">
+
+
+    </ListView>
+
+
+   <Button
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+
+       android:background="@drawable/edges_round_for_textview"
+       android:text="Add Another Payment Method"
+       android:textColor="#FFFFFF"
+       android:layout_margin="30dp"/>
+</LinearLayout>

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_vehicle_detail_documents"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:background="@drawable/bg"
+    tools:context="com.example.usman.yepbus.Vehicle_detail_documents">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        >
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+           android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textSize="30sp"
+                android:id="@+id/vehicle"
+                android:layout_height="wrap_content"
+                android:textColor="#34609d"
+                android:layout_alignParentEnd="true"
+                android:text="VEHICLE" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:textSize="30sp"
+                android:layout_height="wrap_content"
+                android:textColor="#34609d"
+                android:id="@+id/details"
+                android:layout_marginLeft="10dp"
+                android:text="DETAILS" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:id="@+id/documents"
+            android:textColor="#34609d"
+            android:gravity="center"
+            android:text="DOCUMENTS"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/middle"
+            android:textSize="18sp"
+            android:text="@string/document_text"/>
+    </LinearLayout>
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:layout_weight="3"
+      android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+       <ImageView
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+            android:layout_margin="30dp"
+           android:id="@+id/doc1"
+           android:scaleType="fitXY"
+           android:background="@drawable/btn_document"/>
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:id="@+id/doc2"
+            android:layout_weight="1"
+            android:scaleType="fitXY"
+            android:background="@drawable/btn_document"/>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:id="@+id/doc3"
+            android:layout_weight="1"
+            android:scaleType="fitXY"
+            android:background="@drawable/btn_document"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/doctext1"
+            android:textSize="17sp"
+            android:gravity="center"
+            android:text="Insurance Coverage"
+            android:textColor="#34609d"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/doctext2"
+            android:textSize="17sp"
+            android:gravity="center"
+            android:textColor="#34609d"
+            android:text="Driver's License"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/doctext3"
+            android:textSize="17sp"
+            android:gravity="center"
+            android:textColor="#34609d"
+            android:text="CPR/First-Aid certification"/>
+    </LinearLayout>
+  </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+         >
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:id="@+id/goTonext"
+            android:textAllCaps="false"
+            android:padding="10dp"
+            android:textColor="#ffffff"
+            android:backgroundTint="#34609d"
+            android:background="@drawable/edges_round_for_textview"
+            android:text="Continue"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>

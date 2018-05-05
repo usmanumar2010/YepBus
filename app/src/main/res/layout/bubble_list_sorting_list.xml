@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.daasuu.bl.BubbleLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/activity_horizontal_margin"
+    app:bl_arrowPosition="55dp"
+    app:bl_arrowHeight="12dp"
+    app:bl_arrowDirection="top"
+    app:bl_arrowWidth="8dp"
+    app:bl_bubbleColor="#34609d"
+    app:bl_cornersRadius="2dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/byName"
+            android:layout_marginBottom="2dp"
+            android:text="By Name"
+            android:textSize="20dp"
+            android:textColor="#FFFF"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/byRating"
+            android:layout_marginBottom="2dp"
+
+            android:text="By Rating"
+            android:textSize="20dp"
+            android:textColor="#FFFF"/>
+
+    </LinearLayout>
+
+
+</com.daasuu.bl.BubbleLayout>

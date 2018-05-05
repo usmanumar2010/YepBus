@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        tools:context="com.example.usman.yepbus.CreateAnEvent_Fragement">
+
+        <EditText
+
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/username"
+            android:ems="10"
+            android:hint="Name"
+            android:inputType="textPersonName"
+            android:padding="14dp"
+
+            />
+
+        <EditText
+
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="87dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1.02"
+            android:background="@drawable/username"
+            android:gravity="top|left"
+            android:hint="Description"
+            android:inputType="textLongMessage|textMultiLine"
+            android:padding="10dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="4dp"
+                android:text="Enter a Cover photo"
+                android:textColor="#34609d"
+                android:textSize="20sp"
+                android:textStyle="bold"
+
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="(Optional)"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="112dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/EventProfilePic"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:layout_gravity="center"
+                android:clickable="true"
+
+                android:src="@drawable/default_event" />
+
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="4dp"
+            android:text="Vehicle"
+            android:textColor="#34609d"
+            android:textSize="20sp"
+            android:textStyle="bold"
+
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="2dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/username"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/spinner1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="0.7"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:prompt="@string/hey"
+                android:spinnerMode="dropdown" />
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/username"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/icon_dollar"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/ammountForEvent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="9dp"
+                android:layout_weight="3"
+                android:text="5.2"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5">
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="#D3D3D3" />
+
+                    <ImageButton
+                        android:layout_width="20dp"
+                        android:layout_height="13dp"
+                        android:id="@+id/minus"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/minus_background_2" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5">
+
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:background="#D3D3D3" />
+
+                    <ImageButton
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerInParent="true"
+                        android:id="@+id/plus"
+                        android:background="@drawable/plus_background" />
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="4dp"
+            android:layout_marginTop="10dp"
+            android:text="Category"
+            android:textColor="#34609d"
+            android:textSize="20sp"
+            android:textStyle="bold"
+
+            />
+
+        <EditText
+
+            android:id="@+id/addTags"
+            android:layout_width="match_parent"
+            android:layout_height="87dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1.02"
+            android:background="@drawable/username"
+            android:gravity="top|left"
+            android:inputType="textLongMessage|textMultiLine"
+            android:padding="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="4dp"
+            android:layout_marginTop="10dp"
+            android:text="Departure"
+            android:textColor="#34609d"
+            android:textSize="20sp"
+            android:textStyle="bold"
+
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_marginRight="6dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/username"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:id="@+id/time"
+                    android:layout_marginLeft="4dp"
+                    android:layout_centerVertical="true"
+                    android:focusableInTouchMode="true"
+                    android:focusable="true"
+                    android:clickable="true"
+                    android:src="@drawable/icon_time_blue" />
+
+                <Spinner
+                    android:id="@+id/spinner2"
+                    android:layout_width="match_parent"
+                    android:layout_toRightOf="@id/time"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="0.7"
+                    android:background="@android:color/transparent"
+                    android:gravity="center"
+                    android:spinnerMode="dropdown" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/username"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_marginLeft="4dp"
+                    android:layout_centerVertical="true"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:id="@+id/date"
+                    android:src="@drawable/icon_date_blue"/>
+
+                <Spinner
+                    android:id="@+id/spinner3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/date"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="0.7"
+                    android:background="@android:color/transparent"
+                    android:gravity="center"
+                    android:clickable="true"
+                    android:focusableInTouchMode="true"
+                    android:spinnerMode="dropdown" />
+
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="19dp"
+            android:weightSum="1"
+            android:orientation="horizontal">
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:layout_marginRight="10dp"
+                android:backgroundTint="#34609d"
+                android:text="Create"
+                android:textSize="20sp"
+                android:textAllCaps="false"
+                android:background="@drawable/edges_round_for_textview"
+                android:layout_weight="0.5"
+                />
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/cancel_event"
+                android:textSize="20sp"
+                android:layout_marginLeft="10dp"
+                android:text="Cancel"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#ca234e"
+                android:background="@drawable/edges_round_for_textview"
+                android:layout_weight="0.5"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</ScrollView>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.daasuu.bl.BubbleLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/activity_horizontal_margin"
+    app:bl_arrowHeight="12dp"
+    app:bl_arrowDirection="top"
+    app:bl_arrowWidth="20dp"
+    app:bl_bubbleColor="#34609d"
+    app:bl_arrowPosition="210dp"
+
+    app:bl_cornersRadius="2dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+
+       <LinearLayout
+           android:layout_height="wrap_content"
+           android:layout_width="300dp"
+           android:orientation="horizontal"
+           android:id="@+id/helloDriver"
+           android:weightSum="3">
+           <ImageView
+               android:layout_width="0dp"
+               android:layout_height="wrap_content"
+               android:background="@drawable/icon_tick_small"
+               android:layout_weight="1"
+               android:padding="15dp"
+               android:visibility="invisible"
+               android:id="@+id/tick1"
+               android:scaleType="center"/>
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:textColor="#ffffff"
+               android:text="YepDriver"
+               android:layout_weight="2"
+               android:textSize="30sp"
+               android:paddingLeft="10dp"
+               android:id="@+id/helloDriver2"
+               />
+
+       </LinearLayout>
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="300dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:id="@+id/helloRider"
+            android:weightSum="3">
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/icon_tick_small"
+                android:layout_weight="1" android:padding="15dp"
+                android:visibility="invisible"
+                android:id="@+id/tick2"
+                android:scaleType="center"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:text="YepRider"
+                android:layout_weight="2"
+                android:textSize="30sp"
+                android:paddingLeft="10dp"
+                android:id="@+id/helloRider2"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</com.daasuu.bl.BubbleLayout>

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "203954518653",
+    "firebase_url": "https://yebbus-195a6.firebaseio.com",
+    "project_id": "yebbus-195a6",
+    "storage_bucket": "yebbus-195a6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:203954518653:android:7d5e3658ea2709c3",
+        "android_client_info": {
+          "package_name": "com.example.usman.yepbus"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "203954518653-8kj810vi31uac6m17eov0ovkjl6r9hsj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.usman.yepbus",
+            "certificate_hash": "6860dd63bceac7ced0cf3e89a222a4805a766871"
+          }
+        },
+        {
+          "client_id": "203954518653-70qod7g0kcffs3tdlp5n2qog6a0si98p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCCKkPwXAM_AvPWZieT9U_FMp5t_-BrRmM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "203954518653-70qod7g0kcffs3tdlp5n2qog6a0si98p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

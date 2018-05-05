@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="22dp"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    tools:context="com.example.usman.yepbus.MainActivity"
+    android:weightSum="2"
+    android:orientation="vertical"
+    android:background="@drawable/bg"
+    >
+
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="120dp"
+        android:id="@+id/imageButton"
+        android:layout_marginLeft="0dp"
+        app:srcCompat="@drawable/yep_bus"
+        android:elevation="0dp"
+        android:layout_centerHorizontal="true"
+        android:scaleType="fitCenter"
+        android:clickable="false"
+        />
+
+</RelativeLayout>
+
+
+
+    <!--<LinearLayout-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_width="151dp"-->
+    <!--android:orientation="vertical"-->
+    <!--android:layout_marginLeft="90dp"-->
+    <!--android:layout_marginTop="30dp"-->
+
+    <!--&gt;-->
+    <!--android:background="@drawable/CustomBorder"-->
+
+<LinearLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:orientation="vertical">
+
+    <EditText
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Username"
+        android:layout_marginBottom="3dp"
+        android:id="@+id/editText"
+
+        android:background="@drawable/username"
+        android:padding="10dp"
+        />
+
+    <EditText
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:layout_alignStart="@+id/editText"
+        android:id="@+id/editText2"
+        android:hint="Password"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/username"
+
+        />
+
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        android:backgroundTint="#34609d"
+        android:text="Login"
+        android:background="@drawable/edges_round_for_textview"
+
+        />
+
+</LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:weightSum="2">
+
+
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/forget_password"
+                android:textSize="19sp"
+                android:layout_weight="1"
+                />
+
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/new_user"
+                    android:textSize="19sp"
+                    android:textColor="@color/colorPrimary"
+                    android:id="@+id/newuserid"
+                   android:gravity="end"
+                    android:onClick="onClickNewUser"
+                    android:layout_weight="1"
+                    />
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

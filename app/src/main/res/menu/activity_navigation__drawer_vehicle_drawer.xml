@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <group android:checkableBehavior="single" >
+        <item
+            android:id="@+id/myProfile"
+            android:title="My Profile"
+            />
+        <item
+            android:id="@+id/myRequest"
+            android:title="My Request" />
+        <item
+            android:id="@+id/accountSettings"
+            android:title="Account Settings" />
+        <item
+            android:id="@+id/payementDetails"
+            android:title="Payment Details" />
+        <item
+            android:id="@+id/hist"
+            android:title="History"/>
+    </group>
+
+
+
+</menu>
